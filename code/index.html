@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quiz Form" />
+    <title>Web Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="icon">
+        <a href="https://www.freecodecamp.org/" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="27"
+            viewBox="0 0 576 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M97.2 96.2c10.4-10.7 16-17.1 16-21.9 0-2.8-1.9-5.5-3.8-7.4A14.8 14.8 0 0 0 101 64.1c-8.5 0-20.9 8.8-35.8 25.7C23.7 137 2.5 182.8 3.4 250.3s17.5 117 54.1 161.9C76.2 435.9 90.6 448 100.9 448a13.6 13.6 0 0 0 8.4-3.8c1.9-2.8 3.8-5.6 3.8-8.4 0-5.6-3.9-12.2-13.2-20.6-44.5-42.3-67.3-97-67.5-165C32.3 188.8 54 137.8 97.2 96.2zM239.5 420.1c.6 .4 .9 .6 .9 .6zm93.8 .6 .2-.1C333.2 420.6 333.2 420.7 333.3 420.6zm3.1-158.2c-16.2-4.2 50.4-82.9-68.1-177.2 0 0 15.5 49.4-62.8 159.6-74.3 104.4 23.5 168.7 34 175.2-6.7-4.4-47.4-35.7 9.6-128.6 11-18.3 25.5-34.9 43.5-72.2 0 0 15.9 22.5 7.6 71.1C287.7 364 354 342.9 355 343.9c22.8 26.8-17.7 73.5-21.6 76.6 5.5-3.7 117.7-78 33-188.1C360.4 238.4 352.6 266.6 336.4 262.4zM510.9 89.7C496 72.8 483.5 64 475 64a14.8 14.8 0 0 0 -8.4 2.8c-1.9 1.9-3.8 4.7-3.8 7.4 0 4.8 5.6 11.3 16 21.9 43.2 41.6 65 92.6 64.8 154.1-.2 68-23 122.6-67.5 165-9.3 8.4-13.2 14.9-13.2 20.6 0 2.8 1.9 5.6 3.8 8.4A13.6 13.6 0 0 0 475.1 448c10.3 0 24.7-12.1 43.5-35.8 36.6-44.9 53.1-94.4 54.1-161.9S552.3 137 510.9 89.7z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div id="title">
+        <h1>Web Quiz</h1>
+      </div>
+      <div class="padding"></div>
+    </div>
+    <div class="main">
+      <form action="#" method="post">
+        <div class="about-region">
+          <div class="classifier">
+            <h2>About you</h2>
+          </div>
+          <div class="info-region">
+            <div class="field">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                pattern="^[A-Za-z]+(?:['-][A-Za-z]+)*$"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="field">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="field">
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                pattern="^\+?[0-9()-\s]+$"
+                placeholder="Phone"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="quiz-region">
+          <section>
+            <div class="question-region">
+              <div class="classifier"><h2>Question 1</h2></div>
+              <div class="info-region">
+                <p class="question-text">What does HTML stand for?</p>
+                <div class="answer">
+                  <span>Hyper Text Markup Language</span>
+                  <input type="radio" name="r1-qa1" id="qa1-1" />
+                </div>
+                <div class="answer">
+                  <span>High Technical Markup Language</span>
+                  <input type="radio" name="r1-qa1" id="qa1-2" />
+                </div>
+                <div class="answer">
+                  <span>Home Tool Markup Language</span>
+                  <input type="radio" name="r1-qa1" id="qa1-3" />
+                </div>
+                <div class="answer">
+                  <span>Hyperlinks and Text Markup Language</span>
+                  <input type="radio" name="r1-qa1" id="qa1-3" />
+                </div>
+              </div>
+            </div>
+            <div class="separator"></div>
+            <div class="question-region">
+              <div class="classifier"><h2>Question 2</h2></div>
+              <div class="info-region">
+                <p class="question-text">
+                  Which HTML tag is used to define an unordered list?
+                </p>
+                <div class="answer">
+                  <span>&lt;ul&gt;</span>
+                  <input type="radio" name="r1-qa2" id="qa2-1" />
+                </div>
+                <div class="answer">
+                  <span>&lt;ol&gt;</span>
+                  <input type="radio" name="r1-qa2" id="qa2-2" />
+                </div>
+                <div class="answer">
+                  <span>&lt;li&gt;</span>
+                  <input type="radio" name="r1-qa2" id="qa2-3" />
+                </div>
+                <div class="answer">
+                  <span>&lt;list&gt;</span>
+                  <input type="radio" name="r1-qa2" id="qa2-3" />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="question-region">
+              <div class="classifier"><h2>Question 1</h2></div>
+              <div class="info-region">
+                <p class="question-text">
+                  What property is used to change the text color in CSS?
+                </p>
+                <div class="answer">
+                  <span>color</span>
+                  <input type="radio" name="r2-qa1" id="qa1-1" />
+                </div>
+                <div class="answer">
+                  <span>text-color</span>
+                  <input type="radio" name="r2-qa1" id="qa1-2" />
+                </div>
+                <div class="answer">
+                  <span>font-color</span>
+                  <input type="radio" name="r2-qa1" id="qa1-3" />
+                </div>
+                <div class="answer">
+                  <span>text-style</span>
+                  <input type="radio" name="r2-qa1" id="qa1-3" />
+                </div>
+              </div>
+            </div>
+            <div class="separator"></div>
+            <div class="question-region">
+              <div class="classifier"><h2>Question 2</h2></div>
+              <div class="info-region">
+                <p class="question-text">
+                  Which CSS property is used to set the background color of an
+                  element?
+                </p>
+                <div class="answer">
+                  <span>background-color</span>
+                  <input type="radio" name="r2-qa2" id="qa2-1" />
+                </div>
+                <div class="answer">
+                  <span>color</span>
+                  <input type="radio" name="r2-qa2" id="qa2-2" />
+                </div>
+                <div class="answer">
+                  <span>background</span>
+                  <input type="radio" name="r2-qa2" id="qa2-3" />
+                </div>
+                <div class="answer">
+                  <span>bgcolor</span>
+                  <input type="radio" name="r2-qa2" id="qa2-3" />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="question-region">
+              <div class="classifier"><h2>Question 1</h2></div>
+              <div class="info-region">
+                <p class="question-text">
+                  What does the === operator do in JavaScript?
+                </p>
+                <div class="answer">
+                  <span>Strict equality comparison</span>
+                  <input type="radio" name="r3-qa1" id="qa1-1" />
+                </div>
+                <div class="answer">
+                  <span>Loose equality comparison</span>
+                  <input type="radio" name="r3-qa1" id="qa1-2" />
+                </div>
+                <div class="answer">
+                  <span>Assignment</span>
+                  <input type="radio" name="r3-qa1" id="qa1-3" />
+                </div>
+                <div class="answer">
+                  <span>Addition</span>
+                  <input type="radio" name="r3-qa1" id="qa1-3" />
+                </div>
+              </div>
+            </div>
+            <div class="separator"></div>
+            <div class="question-region">
+              <div class="classifier"><h2>Question 2</h2></div>
+              <div class="info-region">
+                <p class="question-text">
+                  What method is used to select an element by its ID in
+                  JavaScript?
+                </p>
+                <div class="answer">
+                  <span>document.getElementById()</span>
+                  <input type="radio" name="r3-qa2" id="qa2-1" />
+                </div>
+                <div class="answer">
+                  <span>document.querySelector()</span>
+                  <input type="radio" name="r3-qa2" id="qa2-2" />
+                </div>
+                <div class="answer">
+                  <span>document.selectById()</span>
+                  <input type="radio" name="r3-qa2" id="qa2-3" />
+                </div>
+                <div class="answer">
+                  <span>document.getElement()</span>
+                  <input type="radio" name="r3-qa2" id="qa2-3" />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="submit-button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <span>Follow us on:</span>
+      <div class="social-icons">
+        <a href="https://twitter.com/" target="_blank"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="24"
+            viewBox="0 0 512 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+            /></svg
+        ></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="24"
+            viewBox="0 0 512 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+            /></svg
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="21"
+            viewBox="0 0 448 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+            /></svg
+        ></a>
+        <a href="https://mail.google.com/" target="_blank"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="22.875"
+            viewBox="0 0 488 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+            /></svg
+        ></a>
+      </div>
+    </div>
+  </body>
+</html>
